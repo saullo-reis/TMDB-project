@@ -24,7 +24,7 @@ const Footers = styled.section`
   justify-content: end;
   padding-bottom: 20px;
   align-items: center;
-  background-color: #b0a3d4;
+  background-color: #545F66;
 `;
 const A = styled.a`
   text-decoration: none;

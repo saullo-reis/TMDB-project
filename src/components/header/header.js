@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../assets/img/livro.png";
+import img from "../../assets/img/livrocerto.png";
 
 export const Header = () => {
   return (
@@ -22,16 +22,15 @@ const Div = styled.div`
 const Section = styled.section`
   width: 100%;
   height:140px;
-  background-color: #B0A3D4;
-  margin-bottom: 20px;
+  background-color: #545F66;
   display: flex;
   justify-content: center;
 `;
 const H1 = styled.h1`
   font-weight: bold;
   font-size: 30px;
+  color:#111111;
 `;
 const Img = styled.img`
-  width: 40px;
-  color: white;
+  width: 50px;
 `;

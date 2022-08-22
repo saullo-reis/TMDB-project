@@ -21,7 +21,7 @@ export const MainDetails = () => {
   return(
     <Section>
       <h1>{film.title}</h1>
-      <img src={`https://image.tmdb.org/t/p/w400/${film.poster_path}`}></img>
+      <img src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`}></img>
       <Ul>
         <li>
           <h2>Popularidade:</h2>

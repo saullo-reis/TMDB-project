@@ -1,5 +1,5 @@
 import { Header } from "./components/header/header";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import font from "./assets/fonts/IbarraRealNova-Italic-VariableFont_wght.ttf";
 import { AppRoutes } from "./components/pages/routes";
 import { Footer } from "./components/footer/footer";
@@ -35,7 +35,5 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 `;
-
-
 
 export default App;

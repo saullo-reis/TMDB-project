@@ -1,4 +1,4 @@
-import { getName, getMovie } from "../../services/getMovie";
+import { getName } from "../../services/getMovie";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -33,11 +33,11 @@ export const MainPage = () => {
           films.map((film, index) => {
             {
               return (
-                <Link to={`/movie/${film.id}`}>
+                <Link to={`/movie/${film.id}`} key={index}>
                   <Li key={index}>
-                    <img
-                      src={`https://image.tmdb.org/t/p/w200/${film.poster_path}`}
-                    ></img>
+                    <Img
+                      src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`}
+                    ></Img>
                     <h2>{film.title}</h2>
                   </Li>  
                 </Link>
@@ -53,6 +53,11 @@ export const MainPage = () => {
 };
 
 const Section = styled.section`
+  background-color:#ffffff;
+`
+
+const Img = styled.img`
+  width:200px;
 `
 
 const Input = styled.input`
@@ -72,9 +77,13 @@ const Ul = styled.ul`
   justify-content: space-between;
   flex-flow: row wrap;
   padding: 30px;
+  li{
+    background-color:#ffffff;
+  }
   li:hover {
-    background-color: #b0a3d4;
+    background-color: #111111;
     transition: 0.4s;
+    color:#ffffff;
   }
   a{
     text-decoration:none;
@@ -90,6 +99,7 @@ const Li = styled.li`
   align-items: center;
   flex-direction: column;
   width: 260px;
+  height: 500px;
   margin: 3px;
   border: solid 1px #b0a3d4;
   padding: 20px;
